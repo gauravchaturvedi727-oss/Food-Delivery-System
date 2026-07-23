@@ -1,0 +1,93 @@
+.add-food-container{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.add-food-container h1{
+
+    margin-bottom:25px;
+
+    color:#1e293b;
+
+}
+
+.add-food-container form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.add-food-container input,
+.add-food-container select,
+.add-food-container textarea{
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.add-food-container input:focus,
+.add-food-container select:focus,
+.add-food-container textarea:focus{
+
+    border-color:#ff6b35;
+
+}
+
+.checkbox{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.add-food-container button{
+
+    background:#ff6b35;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.add-food-container button:hover{
+
+    background:#e85d2c;
+
+}

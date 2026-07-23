@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+}
+
+.register-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:linear-gradient(135deg,#fff5ef,#fff,#fff7f1);
+}
+
+.register-card{
+    width:100%;
+    max-width:650px;
+    background:#fff;
+    border-radius:20px;
+    padding:20px;
+    /* box-shadow:0 15px 40px rgba(0,0,0,.12); */
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.08),
+        0 20px 50px rgba(205, 208, 25, 0.221);
+}
+
+.register-card h1{
+    text-align:center;
+    color:#ff6b00;
+    font-size:34px;
+    margin-bottom:6px;
+}
+
+.register-card>p{
+    text-align:center;
+    color:#777;
+}
+
+.role-glass{
+    margin-bottom:20px;
+}
+
+.role-glass h3{
+    margin-bottom:12px;
+    color:#333;
+    font-size:18px;
+}
+
+.role-options{
+    display:flex;
+    gap:15px;
+}
+
+.role-card{
+    flex:1;
+    border:2px solid #ececec;
+    border-radius:14px;
+    padding:16px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    background:#fff;
+}
+
+.role-card input{
+    display:none;
+}
+
+.role-card span{
+    font-size:28px;
+}
+
+.role-card h4{
+    margin:8px 0 4px;
+    color:#222;
+}
+
+.role-card p{
+    font-size:12px;
+    color:#777;
+}
+
+.role-card:hover{
+    transform:translateY(-4px);
+    border-color:#ff6b00;
+}
+
+.role-card.active{
+    border-color:#ff6b00;
+    background:#fff4ec;
+}
+
+.input-box{
+    display:flex;
+    align-items:center;
+    height:55px;
+    border:2px solid #ececec;
+    border-radius:12px;
+    padding:0 15px;
+    margin-bottom:15px;
+    transition:.3s;
+    background:#fff;
+}
+
+.input-box:focus-within{
+    border-color:#ff6b00;
+    box-shadow:0 0 0 4px rgba(255,107,0,.1);
+}
+
+.input-box svg{
+    color:#ff6b00;
+    margin-right:12px;
+    font-size:18px;
+}
+
+.input-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+}
+
+.input-box input::placeholder{
+    color:#999;
+}
+
+.password-toggle{
+    cursor:pointer;
+    color:#777;
+    font-size:18px;
+    transition:.3s;
+}
+
+.password-toggle:hover{
+    color:#ff6b00;
+}
+
+.admin-secret{
+    border-color:#ff9800;
+}
+
+.register-btn{
+    width:100%;
+    height:55px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#ff7b00,#ff5100);
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-top:8px;
+}
+
+.register-btn:hover:not(:disabled){
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(255,107,0,.35);
+}
+
+.register-btn:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+}
+
+.bottom-text{
+    margin-top:18px;
+    text-align:center;
+    color:#666;
+    font-size:15px;
+}
+
+.bottom-text a{
+    margin-left:6px;
+    color:#ff6b00;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.bottom-text a:hover{
+    text-decoration:underline;
+}
+
+/* Scroll remove */
+
+@media(min-height:700px){
+
+    .register-card{
+        padding:24px 28px;
+    }
+
+    .role-card{
+        padding:12px;
+    }
+
+    .role-card span{
+        font-size:24px;
+    }
+
+    .role-card h4{
+        font-size:15px;
+        margin:5px 0;
+    }
+
+    .role-card p{
+        font-size:11px;
+    }
+
+    .input-box{
+        height:50px;
+        margin-bottom:12px;
+    }
+
+    .register-btn{
+        height:50px;
+    }
+}
+
+@media(max-width:768px){
+
+    .register-page{
+        padding:15px;
+        align-items:flex-start;
+    }
+
+    .register-card{
+        max-width:100%;
+        padding:22px;
+    }
+
+    .role-options{
+        flex-direction:column;
+    }
+
+    .register-card h1{
+        font-size:30px;
+    }
+}
+
+@media(max-width:480px){
+
+    .register-page{
+        padding:10px;
+    }
+
+    .register-card{
+        padding:18px;
+        border-radius:15px;
+    }
+
+    .register-card h1{
+        font-size:28px;
+    }
+
+    .register-card>p{
+        font-size:14px;
+    }
+
+    .role-card{
+        padding:10px;
+    }
+
+    .role-card span{
+        font-size:22px;
+    }
+
+    .role-card h4{
+        font-size:14px;
+    }
+
+    .role-card p{
+        font-size:11px;
+    }
+
+    .input-box{
+        height:48px;
+    }
+
+    .register-btn{
+        height:48px;
+        font-size:15px;
+    }
+
+    .bottom-text{
+        font-size:14px;
+    }
+}

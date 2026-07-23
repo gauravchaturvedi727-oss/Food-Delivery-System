@@ -1,0 +1,27 @@
+.admin-content{
+    flex:1;
+    padding:30px;
+}
+
+.food-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+}
+
+.food-table th,
+.food-table td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+.food-table th{
+    background:#ff6b35;
+    color:white;
+}
+
+.food-table select{
+    padding:8px;
+    border-radius:5px;
+}
