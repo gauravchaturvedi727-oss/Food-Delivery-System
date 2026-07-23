@@ -46,7 +46,7 @@ function FoodCard({ food }) {
             <div className="food-image">
 
                 <img
-                    src={`http://localhost:3000/upload/${food.image}`}
+                    src={`https://food-delivery-backend-1-wn1q.onrender.com/upload/${food.image}`}
                     alt={food.name}
                 />
 
