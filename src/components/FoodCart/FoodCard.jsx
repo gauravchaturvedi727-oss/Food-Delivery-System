@@ -11,7 +11,7 @@ function FoodCard({ food }) {
             const token = localStorage.getItem("token");
 
             if (!token) {
-                alert("Please login first");
+                toast.success("Please login first");
                 return;
             }
 
