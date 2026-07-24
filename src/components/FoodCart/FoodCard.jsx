@@ -27,13 +27,13 @@ function FoodCard({ food }) {
                 }
             );
 
-            alert(response.data.message);
+            toast.success(response.data.message);
 
         } catch (error) {
 
             console.log(error);
 
-            alert(error.response?.data?.message || "Something went wrong");
+            toast.error(error.response?.data?.message || "Something went wrong");
 
         }
 
