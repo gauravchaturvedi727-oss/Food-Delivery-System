@@ -1,6 +1,7 @@
 import "./FoodCard.css";
 import { FaStar, FaShoppingCart } from "react-icons/fa";
 import api from "../../services/api";
+import { toast } from "react-toastify";
 
 function FoodCard({ food }) {
 
